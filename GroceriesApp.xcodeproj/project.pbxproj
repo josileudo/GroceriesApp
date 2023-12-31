@@ -11,6 +11,8 @@
 		2F369AD12B40A090009EB1AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2F369AD02B40A090009EB1AB /* Lottie */; };
 		2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F369AD42B40B683009EB1AB /* LottieView.swift */; };
 		2F369AD72B40B7FC009EB1AB /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F369AD62B40B7FC009EB1AB /* list.json */; };
+		2F9494042B41F0F60090A7A9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9494032B41F0F60090A7A9 /* AuthView.swift */; };
+		2F9494092B41F1FF0090A7A9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9494082B41F1FF0090A7A9 /* InputView.swift */; };
 		2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */; };
 		2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C92B3C6B0000003FCB /* ContentView.swift */; };
 		2FEFC7CC2B3C6B0200003FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 		2F369ACD2B409D6A009EB1AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2F369AD42B40B683009EB1AB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2F369AD62B40B7FC009EB1AB /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
+		2F9494032B41F0F60090A7A9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		2F9494082B41F1FF0090A7A9 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		2FEFC7C42B3C6B0000003FCB /* GroceriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesApp.swift; sourceTree = "<group>"; };
 		2FEFC7C92B3C6B0000003FCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +56,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F9494012B41F0C80090A7A9 /* Initial */ = {
+			isa = PBXGroup;
+			children = (
+				2F9494022B41F0D80090A7A9 /* View */,
+				2F9494052B41F1060090A7A9 /* View Model */,
+			);
+			path = Initial;
+			sourceTree = "<group>";
+		};
+		2F9494022B41F0D80090A7A9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F9494052B41F1060090A7A9 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		2F9494062B41F16E0090A7A9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2F369AD42B40B683009EB1AB /* LottieView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F9494072B41F17E0090A7A9 /* Lotties */ = {
+			isa = PBXGroup;
+			children = (
+				2F369AD62B40B7FC009EB1AB /* list.json */,
+			);
+			path = Lotties;
+			sourceTree = "<group>";
+		};
 		2FEFC7BB2B3C6B0000003FCB = {
 			isa = PBXGroup;
 			children = (
@@ -71,12 +115,13 @@
 		2FEFC7C62B3C6B0000003FCB /* GroceriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				2F9494072B41F17E0090A7A9 /* Lotties */,
+				2F9494062B41F16E0090A7A9 /* Model */,
 				2FEFC7E02B3C6F9100003FCB /* App */,
 				2FEFC7E22B3C6FFD00003FCB /* Components */,
 				2FEFC7E32B3C700800003FCB /* Core */,
 				2FEFC7E12B3C6FE200003FCB /* Root */,
 				2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */,
-				2F369AD62B40B7FC009EB1AB /* list.json */,
 				2FEFC7D52B3C6D8F00003FCB /* GoogleService-Info.plist */,
 				2FEFC7CD2B3C6B0200003FCB /* Preview Content */,
 			);
@@ -111,7 +156,7 @@
 		2FEFC7E22B3C6FFD00003FCB /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				2F369AD42B40B683009EB1AB /* LottieView.swift */,
+				2F9494082B41F1FF0090A7A9 /* InputView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -119,6 +164,7 @@
 		2FEFC7E32B3C700800003FCB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2F9494012B41F0C80090A7A9 /* Initial */,
 				2FEFC7E52B3C706F00003FCB /* Auth */,
 			);
 			path = Core;
@@ -136,7 +182,7 @@
 		2FEFC7E62B3C70B100003FCB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */,
+				2F9494032B41F0F60090A7A9 /* AuthView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,7 +278,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */,
+				2F9494092B41F1FF0090A7A9 /* InputView.swift in Sources */,
 				2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */,
+				2F9494042B41F0F60090A7A9 /* AuthView.swift in Sources */,
 				2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */,
 				2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */,
 				2F369ACE2B409D6A009EB1AB /* Extensions.swift in Sources */,
