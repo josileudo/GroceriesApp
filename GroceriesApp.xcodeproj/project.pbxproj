@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F369ACE2B409D6A009EB1AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F369ACD2B409D6A009EB1AB /* Extensions.swift */; };
+		2F369AD12B40A090009EB1AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2F369AD02B40A090009EB1AB /* Lottie */; };
+		2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F369AD42B40B683009EB1AB /* LottieView.swift */; };
+		2F369AD72B40B7FC009EB1AB /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F369AD62B40B7FC009EB1AB /* list.json */; };
 		2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */; };
 		2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C92B3C6B0000003FCB /* ContentView.swift */; };
 		2FEFC7CC2B3C6B0200003FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */; };
@@ -16,15 +20,20 @@
 		2FEFC7DB2B3C6F4000003FCB /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DA2B3C6F4000003FCB /* FirebaseDatabaseSwift */; };
 		2FEFC7DD2B3C6F4000003FCB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DC2B3C6F4000003FCB /* FirebaseFirestoreSwift */; };
 		2FEFC7DF2B3C6F4000003FCB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DE2B3C6F4000003FCB /* FirebaseStorage */; };
+		2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F369ACD2B409D6A009EB1AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2F369AD42B40B683009EB1AB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		2F369AD62B40B7FC009EB1AB /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		2FEFC7C42B3C6B0000003FCB /* GroceriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesApp.swift; sourceTree = "<group>"; };
 		2FEFC7C92B3C6B0000003FCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FEFC7CE2B3C6B0200003FCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FEFC7D52B3C6D8F00003FCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F369AD12B40A090009EB1AB /* Lottie in Frameworks */,
 				2FEFC7DB2B3C6F4000003FCB /* FirebaseDatabaseSwift in Frameworks */,
 				2FEFC7DF2B3C6F4000003FCB /* FirebaseStorage in Frameworks */,
 				2FEFC7D92B3C6F4000003FCB /* FirebaseAnalyticsSwift in Frameworks */,
@@ -66,6 +76,7 @@
 				2FEFC7E32B3C700800003FCB /* Core */,
 				2FEFC7E12B3C6FE200003FCB /* Root */,
 				2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */,
+				2F369AD62B40B7FC009EB1AB /* list.json */,
 				2FEFC7D52B3C6D8F00003FCB /* GoogleService-Info.plist */,
 				2FEFC7CD2B3C6B0200003FCB /* Preview Content */,
 			);
@@ -92,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2FEFC7C92B3C6B0000003FCB /* ContentView.swift */,
+				2F369ACD2B409D6A009EB1AB /* Extensions.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -99,6 +111,7 @@
 		2FEFC7E22B3C6FFD00003FCB /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2F369AD42B40B683009EB1AB /* LottieView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -123,6 +136,7 @@
 		2FEFC7E62B3C70B100003FCB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -155,6 +169,7 @@
 				2FEFC7DA2B3C6F4000003FCB /* FirebaseDatabaseSwift */,
 				2FEFC7DC2B3C6F4000003FCB /* FirebaseFirestoreSwift */,
 				2FEFC7DE2B3C6F4000003FCB /* FirebaseStorage */,
+				2F369AD02B40A090009EB1AB /* Lottie */,
 			);
 			productName = GroceriesApp;
 			productReference = 2FEFC7C42B3C6B0000003FCB /* GroceriesApp.app */;
@@ -186,6 +201,7 @@
 			mainGroup = 2FEFC7BB2B3C6B0000003FCB;
 			packageReferences = (
 				2FEFC7D72B3C6F4000003FCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				2F369ACF2B40A090009EB1AB /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 2FEFC7C52B3C6B0000003FCB /* Products */;
 			projectDirPath = "";
@@ -204,6 +220,7 @@
 				2FEFC7CF2B3C6B0200003FCB /* Preview Assets.xcassets in Resources */,
 				2FEFC7D62B3C6D8F00003FCB /* GoogleService-Info.plist in Resources */,
 				2FEFC7CC2B3C6B0200003FCB /* Assets.xcassets in Resources */,
+				2F369AD72B40B7FC009EB1AB /* list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,8 +231,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */,
 				2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */,
+				2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */,
 				2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */,
+				2F369ACE2B409D6A009EB1AB /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +440,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2F369ACF2B40A090009EB1AB /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		2FEFC7D72B3C6F4000003FCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -431,6 +459,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2F369AD02B40A090009EB1AB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F369ACF2B40A090009EB1AB /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
 		2FEFC7D82B3C6F4000003FCB /* FirebaseAnalyticsSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 2FEFC7D72B3C6F4000003FCB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
