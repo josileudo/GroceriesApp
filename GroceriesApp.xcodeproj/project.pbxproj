@@ -20,7 +20,7 @@
 		2FEFC7DB2B3C6F4000003FCB /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DA2B3C6F4000003FCB /* FirebaseDatabaseSwift */; };
 		2FEFC7DD2B3C6F4000003FCB /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DC2B3C6F4000003FCB /* FirebaseFirestoreSwift */; };
 		2FEFC7DF2B3C6F4000003FCB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2FEFC7DE2B3C6F4000003FCB /* FirebaseStorage */; };
-		2FEFC7E92B3DC8EB00003FCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7E82B3DC8EB00003FCB /* LoginView.swift */; };
+		2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FEFC7CE2B3C6B0200003FCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FEFC7D52B3C6D8F00003FCB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2FEFC7E82B3DC8EB00003FCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +136,7 @@
 		2FEFC7E62B3C70B100003FCB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2FEFC7E82B3DC8EB00003FCB /* LoginView.swift */,
+				2FEFC7E82B3DC8EB00003FCB /* InitialView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FEFC7E92B3DC8EB00003FCB /* LoginView.swift in Sources */,
+				2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */,
 				2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */,
 				2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */,
 				2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */,
