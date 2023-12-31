@@ -11,9 +11,23 @@ import Lottie
 struct LoginView: View {
     var body: some View {
         VStack() {
+            // MARK: Lottie image
             LottieView(url: "list")
                 .frame(width: 400, height: 400)
             
+            // MARK: Logo mark
+            HStack(spacing: .zero) {
+                Text("Groceries")
+                    .fontWeight(.bold)
+                    .font(.system(size: 30))
+                    .foregroundColor(Color.button)
+                Text("List")
+                    .fontWeight(.bold)
+                    .font(.system(size: 30))
+                    .foregroundColor(.blue)
+            }
+            
+            // MARK: Buttons navigation
             VStack(spacing: 15) {
                 NavigationLink {
                     // MARK: Function for login
