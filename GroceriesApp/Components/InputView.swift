@@ -46,11 +46,11 @@ struct InputView: View {
                         isSecurityField.toggle()
                     }) {
                         Image(systemName: self.isSecurityField ? "eye" : "eye.slash")
+                            .foregroundColor(Color.icon)
                     }
+                    .padding(.horizontal)
                 }
             }
-                       
-            Divider()
         }        
     }
 }

@@ -13,21 +13,24 @@ struct AuthView: View {
    
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {
+            // MARK: Text presentation
             Text("Seja bem vindo, prazer em revê-lo!")
                 .fontWeight(.bold)
                 .font(.custom("Inter-Regular", size: 30))
                 .frame(width: 290, alignment: .leading)
                 .padding(.vertical, 30)
                 .padding(.top, 40)
-                        
+            
+            // MARK: Input's for login
             InputView(textInput: $emailInput,
-                      text: "Email",
+                      label: "Email",
                       placeHolder: "Digite seu Email"
             )
             
             InputView(textInput: $passwordInput,
-                      text: "Senha",
                       isSecurityField: true,
+                      showPasswordIcon: true,
+                      label: "Senha",
                       placeHolder: "Digite sua senha"
             )
             
@@ -56,6 +59,8 @@ struct AuthView: View {
                     
             }
             .padding(.top)
+            .opacity(isFormValid ? 1 : 0.7)
+            .disabled(!isFormValid)
             
             Spacer()
                    
@@ -64,7 +69,8 @@ struct AuthView: View {
                 Text("Não tem uma conta?")
                 
                 NavigationLink {
-                    
+                    RegisterView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     Text("Registre-se")
                         .foregroundColor(.button)
@@ -75,14 +81,26 @@ struct AuthView: View {
             .font(.custom("Inter-Regular", size: 16))
         }
         .padding(.horizontal)
-        
+    }
+}
+
+extension AuthView: AuthFormProtocol {
+    var isFormValid: Bool {
+        return emailInput.contains("@") && passwordInput.count > 5
     }
 }
 
 struct AuthView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            AuthView()
-        }        
+        Group {
+            NavigationView {
+                AuthView()
+            }
+            
+            NavigationView {
+                AuthView()
+            }
+            .preferredColorScheme(.dark)
+        }
     }
 }
