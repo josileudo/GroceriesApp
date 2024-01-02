@@ -13,4 +13,5 @@ extension Color {
     static let button = Color("Button")
     static let placeholder = Color("Placeholder")
     static let backgroundInput = Color("BackgroundInput")
+    static let text = Color("Text")
 }

@@ -31,7 +31,7 @@ struct InitialView: View {
             VStack(spacing: 15) {
                 NavigationLink {
                     // MARK: Function for login
-                    Text("Login")
+                    AuthView()
                 } label: {
                     Text("Login")
                         .font(.subheadline)
@@ -69,6 +69,8 @@ struct InitialView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        InitialView()
+        NavigationView {
+            InitialView()
+        }
     }
 }

@@ -13,6 +13,9 @@
 		2F369AD72B40B7FC009EB1AB /* list.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F369AD62B40B7FC009EB1AB /* list.json */; };
 		2F9494042B41F0F60090A7A9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9494032B41F0F60090A7A9 /* AuthView.swift */; };
 		2F9494092B41F1FF0090A7A9 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F9494082B41F1FF0090A7A9 /* InputView.swift */; };
+		2FAFCB3E2B44610100EC3E05 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FAFCB3B2B4460FF00EC3E05 /* Inter-SemiBold.ttf */; };
+		2FAFCB3F2B44610100EC3E05 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FAFCB3C2B44610000EC3E05 /* Inter-Regular.ttf */; };
+		2FAFCB402B44610100EC3E05 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FAFCB3D2B44610100EC3E05 /* Inter-Medium.ttf */; };
 		2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */; };
 		2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEFC7C92B3C6B0000003FCB /* ContentView.swift */; };
 		2FEFC7CC2B3C6B0200003FCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */; };
@@ -31,6 +34,10 @@
 		2F369AD62B40B7FC009EB1AB /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
 		2F9494032B41F0F60090A7A9 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		2F9494082B41F1FF0090A7A9 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2FAFCB3B2B4460FF00EC3E05 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		2FAFCB3C2B44610000EC3E05 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		2FAFCB3D2B44610100EC3E05 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		2FAFCB412B4461A600EC3E05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2FEFC7C42B3C6B0000003FCB /* GroceriesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GroceriesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEFC7C72B3C6B0000003FCB /* GroceriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesApp.swift; sourceTree = "<group>"; };
 		2FEFC7C92B3C6B0000003FCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -96,6 +103,16 @@
 			path = Lotties;
 			sourceTree = "<group>";
 		};
+		2FAFCB372B44606500EC3E05 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2FAFCB3D2B44610100EC3E05 /* Inter-Medium.ttf */,
+				2FAFCB3C2B44610000EC3E05 /* Inter-Regular.ttf */,
+				2FAFCB3B2B4460FF00EC3E05 /* Inter-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		2FEFC7BB2B3C6B0000003FCB = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +132,7 @@
 		2FEFC7C62B3C6B0000003FCB /* GroceriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				2FAFCB372B44606500EC3E05 /* Font */,
 				2F9494072B41F17E0090A7A9 /* Lotties */,
 				2F9494062B41F16E0090A7A9 /* Model */,
 				2FEFC7E02B3C6F9100003FCB /* App */,
@@ -123,6 +141,7 @@
 				2FEFC7E12B3C6FE200003FCB /* Root */,
 				2FEFC7CB2B3C6B0200003FCB /* Assets.xcassets */,
 				2FEFC7D52B3C6D8F00003FCB /* GoogleService-Info.plist */,
+				2FAFCB412B4461A600EC3E05 /* Info.plist */,
 				2FEFC7CD2B3C6B0200003FCB /* Preview Content */,
 			);
 			path = GroceriesApp;
@@ -266,6 +285,9 @@
 				2FEFC7CF2B3C6B0200003FCB /* Preview Assets.xcassets in Resources */,
 				2FEFC7D62B3C6D8F00003FCB /* GoogleService-Info.plist in Resources */,
 				2FEFC7CC2B3C6B0200003FCB /* Assets.xcassets in Resources */,
+				2FAFCB3E2B44610100EC3E05 /* Inter-SemiBold.ttf in Resources */,
+				2FAFCB402B44610100EC3E05 /* Inter-Medium.ttf in Resources */,
+				2FAFCB3F2B44610100EC3E05 /* Inter-Regular.ttf in Resources */,
 				2F369AD72B40B7FC009EB1AB /* list.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +437,7 @@
 				DEVELOPMENT_TEAM = ZJ24JA23A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroceriesApp/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,6 +468,7 @@
 				DEVELOPMENT_TEAM = ZJ24JA23A8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GroceriesApp/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

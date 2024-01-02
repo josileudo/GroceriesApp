@@ -12,6 +12,17 @@ import FirebaseCore
 struct GroceriesApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    // MARK: Function for see font name.
+   /* init() {
+        for familyName in UIFont.familyNames {
+            print(familyName)
+            
+            for fontName in UIFont.fontNames(forFamilyName: familyName) {
+                print("-- \(fontName)")
+            }
+        }
+    }   */
+    
     var body: some Scene {
         WindowGroup {
           NavigationView {
