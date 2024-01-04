@@ -31,6 +31,7 @@
 		2FF71F6B2B44CCA4007919AD /* GroceriesTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F6A2B44CCA4007919AD /* GroceriesTabBarView.swift */; };
 		2FF71F722B458AD0007919AD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F712B458AD0007919AD /* ListView.swift */; };
 		2FF71F772B458B0E007919AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F762B458B0E007919AD /* ProfileView.swift */; };
+		2FF71F792B45913E007919AD /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F782B45913E007919AD /* ListCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		2FF71F6A2B44CCA4007919AD /* GroceriesTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesTabBarView.swift; sourceTree = "<group>"; };
 		2FF71F712B458AD0007919AD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2FF71F762B458B0E007919AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2FF71F782B45913E007919AD /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -264,17 +266,18 @@
 			isa = PBXGroup;
 			children = (
 				2FF71F702B458AB8007919AD /* View Model */,
-				2FF71F6F2B458AB2007919AD /* View */,
+				2FF71F6F2B458AB2007919AD /* Views */,
 			);
 			path = "Groceries List";
 			sourceTree = "<group>";
 		};
-		2FF71F6F2B458AB2007919AD /* View */ = {
+		2FF71F6F2B458AB2007919AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2FF71F712B458AD0007919AD /* ListView.swift */,
+				2FF71F782B45913E007919AD /* ListCardView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2FF71F702B458AB8007919AD /* View Model */ = {
@@ -394,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF71F792B45913E007919AD /* ListCardView.swift in Sources */,
 				2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */,
 				2F9494092B41F1FF0090A7A9 /* InputView.swift in Sources */,
 				2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */,
