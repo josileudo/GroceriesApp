@@ -22,6 +22,7 @@ struct ListCardView: View {
             Text(supermarketTitle)
                 .font(.subheadline)
                 .opacity(0.6)
+                .padding(.bottom)
             
             HStack(spacing: 4) {
               Image(systemName: "list.bullet")
@@ -30,7 +31,7 @@ struct ListCardView: View {
             .font(.subheadline)
             .opacity(0.6)
         }
-        .padding(24)
+        .padding(20)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(
             RoundedRectangle(cornerRadius: 8, style: .continuous)
