@@ -18,11 +18,14 @@ struct ListCardView: View {
                 .font(.custom("Inter-Regular", size: 18))
                 .bold()
                 .frame(maxWidth: 190, alignment: .leading)
-                            
-            Text(supermarketTitle)
-                .font(.subheadline)
-                .opacity(0.6)
-                .padding(.bottom)
+               
+            HStack(spacing: 4) {
+                Image(systemName: "tag")
+                Text(supermarketTitle)
+            }
+            .font(.subheadline)
+            .opacity(0.6)
+            .padding(.bottom)
             
             HStack(spacing: 4) {
               Image(systemName: "list.bullet")
