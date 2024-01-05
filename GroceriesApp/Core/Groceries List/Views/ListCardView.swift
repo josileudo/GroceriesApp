@@ -16,6 +16,7 @@ struct ListCardView: View {
         VStack(alignment: .leading, spacing: 8) {
             Text(listTitle)
                 .font(.custom("Inter-Regular", size: 18))
+                .foregroundColor(Color.black.opacity(0.8))
                 .bold()
                 .frame(maxWidth: 190, alignment: .leading)
                
@@ -24,14 +25,15 @@ struct ListCardView: View {
                 Text(supermarketTitle)
             }
             .font(.subheadline)
+            .foregroundColor(Color.black.opacity(0.8))
             .opacity(0.6)
-            .padding(.bottom)
             
             HStack(spacing: 4) {
               Image(systemName: "list.bullet")
               Text("Lista 1/7 Concluídos")
             }
             .font(.subheadline)
+            .foregroundColor(Color.black.opacity(0.8))
             .opacity(0.6)
         }
         .padding(20)

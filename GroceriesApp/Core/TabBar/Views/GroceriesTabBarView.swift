@@ -34,6 +34,6 @@ struct GroceriesTabBarView: View {
 
 struct GroceriesTabBarView_Previews: PreviewProvider {
     static var previews: some View {
-        GroceriesTabBarView()
+        GroceriesTabBarView()              
     }
 }
