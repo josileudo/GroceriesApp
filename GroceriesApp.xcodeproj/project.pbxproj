@@ -31,6 +31,9 @@
 		2FF71F6B2B44CCA4007919AD /* GroceriesTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F6A2B44CCA4007919AD /* GroceriesTabBarView.swift */; };
 		2FF71F722B458AD0007919AD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F712B458AD0007919AD /* ListView.swift */; };
 		2FF71F772B458B0E007919AD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F762B458B0E007919AD /* ProfileView.swift */; };
+		2FF71F792B45913E007919AD /* ListCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F782B45913E007919AD /* ListCardView.swift */; };
+		2FF71F7B2B472201007919AD /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F7A2B472201007919AD /* ListModel.swift */; };
+		2FF71F7E2B47587F007919AD /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF71F7D2B47587F007919AD /* ViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		2FF71F6A2B44CCA4007919AD /* GroceriesTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceriesTabBarView.swift; sourceTree = "<group>"; };
 		2FF71F712B458AD0007919AD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		2FF71F762B458B0E007919AD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2FF71F782B45913E007919AD /* ListCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCardView.swift; sourceTree = "<group>"; };
+		2FF71F7A2B472201007919AD /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		2FF71F7D2B47587F007919AD /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		2FEFC7C62B3C6B0000003FCB /* GroceriesApp */ = {
 			isa = PBXGroup;
 			children = (
+				2FF71F7C2B475827007919AD /* Helpers */,
 				2FAFCB372B44606500EC3E05 /* Font */,
 				2F9494072B41F17E0090A7A9 /* Lotties */,
 				2F9494062B41F16E0090A7A9 /* Model */,
@@ -264,22 +271,24 @@
 			isa = PBXGroup;
 			children = (
 				2FF71F702B458AB8007919AD /* View Model */,
-				2FF71F6F2B458AB2007919AD /* View */,
+				2FF71F6F2B458AB2007919AD /* Views */,
 			);
 			path = "Groceries List";
 			sourceTree = "<group>";
 		};
-		2FF71F6F2B458AB2007919AD /* View */ = {
+		2FF71F6F2B458AB2007919AD /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				2FF71F712B458AD0007919AD /* ListView.swift */,
+				2FF71F782B45913E007919AD /* ListCardView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2FF71F702B458AB8007919AD /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FF71F7A2B472201007919AD /* ListModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -306,6 +315,14 @@
 			children = (
 			);
 			path = "View Model";
+			sourceTree = "<group>";
+		};
+		2FF71F7C2B475827007919AD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2FF71F7D2B47587F007919AD /* ViewExtensions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF71F792B45913E007919AD /* ListCardView.swift in Sources */,
 				2FEFC7E92B3DC8EB00003FCB /* InitialView.swift in Sources */,
 				2F9494092B41F1FF0090A7A9 /* InputView.swift in Sources */,
 				2FEFC7CA2B3C6B0000003FCB /* ContentView.swift in Sources */,
@@ -404,7 +422,9 @@
 				2FF71F652B44ADCB007919AD /* RegisterView.swift in Sources */,
 				2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */,
 				2FF71F722B458AD0007919AD /* ListView.swift in Sources */,
+				2FF71F7B2B472201007919AD /* ListModel.swift in Sources */,
 				2FF71F6B2B44CCA4007919AD /* GroceriesTabBarView.swift in Sources */,
+				2FF71F7E2B47587F007919AD /* ViewExtensions.swift in Sources */,
 				2F369ACE2B409D6A009EB1AB /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

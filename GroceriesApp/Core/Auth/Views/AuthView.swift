@@ -46,8 +46,8 @@ struct AuthView: View {
             }
                       
             // MARK: Button for user Login
-            Button {
-                // MARK: Add function for user login
+            NavigationLink {
+                GroceriesTabBarView()
             } label: {
                 Text("Entrar")
                     .font(.subheadline)
@@ -56,11 +56,26 @@ struct AuthView: View {
                     .frame(maxWidth: .infinity, maxHeight: 55)
                     .background(Color.button)
                     .cornerRadius(8)
-                    
             }
             .padding(.top)
             .opacity(isFormValid ? 1 : 0.7)
             .disabled(!isFormValid)
+                        
+//            Button {
+//                // MARK: Add function for user login
+//            } label: {
+//                Text("Entrar")
+//                    .font(.subheadline)
+//                    .fontWeight(.semibold)
+//                    .foregroundColor(Color.white)
+//                    .frame(maxWidth: .infinity, maxHeight: 55)
+//                    .background(Color.button)
+//                    .cornerRadius(8)
+//
+//            }
+//            .padding(.top)
+//            .opacity(isFormValid ? 1 : 0.7)
+//            .disabled(!isFormValid)
             
             Spacer()
                    
