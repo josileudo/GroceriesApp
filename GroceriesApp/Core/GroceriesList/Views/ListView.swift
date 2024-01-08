@@ -40,11 +40,11 @@ struct ListView: View {
                     HeaderView(size)
                 }
             }
-            .sheet(isPresented: $showingBottomSheet) {
-                AddNewListView(closeModal: $showingBottomSheet)
-                    .presentationDetents([.large])
-                    .padding(24)
-            }
+//            .sheet(isPresented: $showingBottomSheet) {
+//                NewListView()
+//                    .presentationDetents([.medium])
+//                    .padding(24)
+//            }
         }
     }
     
@@ -58,9 +58,9 @@ struct ListView: View {
         }
         .hSpacement(.leading)
         .overlay(alignment: .trailing) {
-            Button(action: {
-                self.showingBottomSheet.toggle()
-            }, label: {
+            NavigationLink {
+                NewListView()
+            } label: {
                 Image(systemName: "plus")
                     .font(.title3)
                     .fontWeight(.semibold)
@@ -68,7 +68,7 @@ struct ListView: View {
                     .frame(width: 45, height: 45)
                     .background(Color.button, in: Circle())
                     .containerShape(Circle())
-            })
+            }
         }
         .padding(.bottom, 15)
         .background(
