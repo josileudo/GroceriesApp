@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ListView: View {
     @State private var selectedIndex: Filters = Filters.allItems;
+    @State private var showingBottomSheet: Bool = false
     
     var body: some View {
         GeometryReader {
             let size = $0.size
             NavigationStack {
                 Section {
-                    FilersView(size)
+                    FiltersView(size)
                     ScrollView(showsIndicators: false) {
                         LazyVStack {
                             ForEach(0...3, id: \.self) { groceriesLists in
@@ -39,6 +40,11 @@ struct ListView: View {
                     HeaderView(size)
                 }
             }
+            .sheet(isPresented: $showingBottomSheet) {
+                AddNewListView(closeModal: $showingBottomSheet)
+                    .presentationDetents([.large])
+                    .padding(24)
+            }
         }
     }
     
@@ -48,15 +54,13 @@ struct ListView: View {
         VStack {
             Text("Bem vindo!")
                 .customFont(28)
-                .bold()
-            
+                .bold()            
         }
         .hSpacement(.leading)
         .overlay(alignment: .trailing) {
-            NavigationLink {
-                // MARK: Add item view
-                
-            } label: {
+            Button(action: {
+                self.showingBottomSheet.toggle()
+            }, label: {
                 Image(systemName: "plus")
                     .font(.title3)
                     .fontWeight(.semibold)
@@ -64,7 +68,7 @@ struct ListView: View {
                     .frame(width: 45, height: 45)
                     .background(Color.button, in: Circle())
                     .containerShape(Circle())
-            }
+            })
         }
         .padding(.bottom, 15)
         .background(
@@ -78,7 +82,7 @@ struct ListView: View {
     
     // MARK: Filters
     @ViewBuilder
-    func FilersView(_ size: CGSize) -> some View {
+    func FiltersView(_ size: CGSize) -> some View {
         Picker("Filtros", selection: $selectedIndex) {
             ForEach(Filters.allCases, id:\.self) { item in
                 Text(item.rawValue)

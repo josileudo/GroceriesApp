@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1F08692B48A67C0039DDCD /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F08682B48A67C0039DDCD /* AddNewListView.swift */; };
 		2F369ACE2B409D6A009EB1AB /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F369ACD2B409D6A009EB1AB /* Extensions.swift */; };
 		2F369AD12B40A090009EB1AB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 2F369AD02B40A090009EB1AB /* Lottie */; };
 		2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F369AD42B40B683009EB1AB /* LottieView.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F1F08682B48A67C0039DDCD /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 		2F369ACD2B409D6A009EB1AB /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2F369AD42B40B683009EB1AB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		2F369AD62B40B7FC009EB1AB /* list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = list.json; sourceTree = "<group>"; };
@@ -79,6 +81,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F1F08652B48A5DE0039DDCD /* NewItemList */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F08672B48A6610039DDCD /* ViewModel */,
+				2F1F08662B48A6510039DDCD /* View */,
+			);
+			path = NewItemList;
+			sourceTree = "<group>";
+		};
+		2F1F08662B48A6510039DDCD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F1F08682B48A67C0039DDCD /* AddNewListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F1F08672B48A6610039DDCD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		2F9494012B41F0C80090A7A9 /* Initial */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,8 +226,9 @@
 		2FEFC7E32B3C700800003FCB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2F1F08652B48A5DE0039DDCD /* NewItemList */,
 				2FF71F732B458AEC007919AD /* Profile */,
-				2FF71F6E2B458A90007919AD /* Groceries List */,
+				2FF71F6E2B458A90007919AD /* GroceriesList */,
 				2FF71F692B44CC90007919AD /* TabBar */,
 				2F9494012B41F0C80090A7A9 /* Initial */,
 				2FEFC7E52B3C706F00003FCB /* Auth */,
@@ -246,7 +273,7 @@
 		2FF71F692B44CC90007919AD /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				2FF71F6D2B44CCC6007919AD /* View Model */,
+				2FF71F6D2B44CCC6007919AD /* ViewModel */,
 				2FF71F6C2B44CCB2007919AD /* Views */,
 			);
 			path = TabBar;
@@ -260,20 +287,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2FF71F6D2B44CCC6007919AD /* View Model */ = {
+		2FF71F6D2B44CCC6007919AD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "View Model";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		2FF71F6E2B458A90007919AD /* Groceries List */ = {
+		2FF71F6E2B458A90007919AD /* GroceriesList */ = {
 			isa = PBXGroup;
 			children = (
-				2FF71F702B458AB8007919AD /* View Model */,
+				2FF71F702B458AB8007919AD /* ViewModel */,
 				2FF71F6F2B458AB2007919AD /* Views */,
 			);
-			path = "Groceries List";
+			path = GroceriesList;
 			sourceTree = "<group>";
 		};
 		2FF71F6F2B458AB2007919AD /* Views */ = {
@@ -285,18 +312,18 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		2FF71F702B458AB8007919AD /* View Model */ = {
+		2FF71F702B458AB8007919AD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				2FF71F7A2B472201007919AD /* ListModel.swift */,
 			);
-			path = "View Model";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2FF71F732B458AEC007919AD /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				2FF71F752B458AFC007919AD /* View Model */,
+				2FF71F752B458AFC007919AD /* ViewModel */,
 				2FF71F742B458AF6007919AD /* View */,
 			);
 			path = Profile;
@@ -310,11 +337,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		2FF71F752B458AFC007919AD /* View Model */ = {
+		2FF71F752B458AFC007919AD /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "View Model";
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		2FF71F7C2B475827007919AD /* Helpers */ = {
@@ -420,6 +447,7 @@
 				2F9494042B41F0F60090A7A9 /* AuthView.swift in Sources */,
 				2F369AD52B40B683009EB1AB /* LottieView.swift in Sources */,
 				2FF71F652B44ADCB007919AD /* RegisterView.swift in Sources */,
+				2F1F08692B48A67C0039DDCD /* AddNewListView.swift in Sources */,
 				2FEFC7C82B3C6B0000003FCB /* GroceriesApp.swift in Sources */,
 				2FF71F722B458AD0007919AD /* ListView.swift in Sources */,
 				2FF71F7B2B472201007919AD /* ListModel.swift in Sources */,
