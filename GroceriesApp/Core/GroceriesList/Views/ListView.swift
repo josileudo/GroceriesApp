@@ -21,7 +21,7 @@ struct ListView: View {
                         ForEach(0...3, id: \.self) { groceriesLists in
                             NavigationLink {
                                 ItemsListView()
-                                    .navigationBarTitle("Itens de compra")
+                                    .navigationBarTitle("Feira de reposição")
                             } label: {
                                 ListCardView(listTitle: "Feira de reposição", supermarketTitle: "Líder max")
                             }
@@ -35,9 +35,9 @@ struct ListView: View {
             .navigationBarTitle("Lista de compras", displayMode: .inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button(action: {
-                        // NewListView(showingSheet: $showingBottomSheet)
-                    }) {
+                    NavigationLink {
+                        NewListView(showingSheet: $showingBottomSheet)
+                    } label: {
                         Image(systemName: "plus")
                             .customFont(16)
                             .fontWeight(.semibold)
@@ -61,6 +61,7 @@ struct ListView: View {
             }
         }
         .pickerStyle(.segmented)
+        .padding(.vertical)
     }
 }
 

@@ -52,6 +52,7 @@ struct GroceriesItemsListView: View {
             .padding(.vertical)
         }
         .vSpacement(.top)
+        .padding(.horizontal)
     }
 }
 

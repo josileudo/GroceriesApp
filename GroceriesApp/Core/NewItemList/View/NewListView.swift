@@ -39,6 +39,7 @@ struct NewListView: View {
         }
         .hSpacement(.leading)
         .padding(.vertical)
+        .padding(.horizontal)
     }
 }
 

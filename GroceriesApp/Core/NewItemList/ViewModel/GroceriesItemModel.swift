@@ -9,8 +9,8 @@ import Foundation
 
 struct GroceriesItemModel: Identifiable, Codable {
     var id: String
-    var title: String;
-    var quantity: Int;
+    var title: String
+    var quantity: Int
     
     init(id: String = UUID().uuidString, title: String, quantity: Int) {
         self.id = id

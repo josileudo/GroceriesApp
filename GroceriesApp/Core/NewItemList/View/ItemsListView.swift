@@ -24,13 +24,12 @@ struct ItemsListView: View {
                         .onTapGesture {
                             self.showingBottomSheet.toggle()
                         }
-                        .sheet(isPresented: $showingBottomSheet) {
-                            AddNewListView(closeModal: $showingBottomSheet)
-                                .presentationDetents([.medium])
-                        }
                 }
             }
-            
+        }
+        .sheet(isPresented: $showingBottomSheet) {
+            AddNewListView(closeModal: $showingBottomSheet)
+                .presentationDetents([.medium])
         }
     }
     
