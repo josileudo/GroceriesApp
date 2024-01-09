@@ -21,14 +21,21 @@ struct ItemsListView: View {
             List {
                 ForEach(items) { item in
                     ListRowView(item: item)
+                        .onTapGesture {
+                            self.showingBottomSheet.toggle()
+                        }
+                        .sheet(isPresented: $showingBottomSheet) {
+                            AddNewListView(closeModal: $showingBottomSheet)
+                                .presentationDetents([.medium])
+                        }
                 }
             }
+            
         }
-//        .sheet(isPresented: $showingBottomSheet) {
-//            NewListView()
-//                .presentationDetents([.medium])
-//                .padding(24)
-//        }
+    }
+    
+    func didDissmis() {
+        print("Close modal")
     }
 }
 

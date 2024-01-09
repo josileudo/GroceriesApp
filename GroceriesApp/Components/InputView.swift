@@ -15,7 +15,6 @@ struct InputView: View {
     var label: String
     var placeHolder: String;
     
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(label)

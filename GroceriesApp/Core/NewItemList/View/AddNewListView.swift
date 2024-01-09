@@ -9,7 +9,7 @@ import SwiftUI
 struct AddNewListView: View {
     @Binding var closeModal: Bool
     
-    @State var title: String = "Criar novo item"
+    @State var title: String = "Editar item"
     @State var itemName: String = ""
     @State var quantity: Int = 0
     @State var unit: Int = 0
@@ -29,30 +29,31 @@ struct AddNewListView: View {
             HeaderView()
             FormView()
             
-            Button {
-                // MARK: Add function for user login                
-           } label: {
-               Text("Salvar")
-                   .font(.subheadline)
-                   .fontWeight(.semibold)
-                   .foregroundColor(Color.white)
-                   .frame(maxWidth: .infinity, maxHeight: 55)
-                   .background(Color.button)
-                   .cornerRadius(8)
-           }
-           .padding(.top)
-           .disabled(!isFormValid)
-           .opacity(isFormValid ? 1 : 0.7)
+//            Button {
+//                // MARK: Add function for user login
+//           } label: {
+//               Text("Salvar")
+//                   .font(.subheadline)
+//                   .fontWeight(.semibold)
+//                   .foregroundColor(Color.white)
+//                   .frame(maxWidth: .infinity, maxHeight: 55)
+//                   .background(Color.button)
+//                   .cornerRadius(8)
+//           }
+//           .padding(.top)
+//           .disabled(!isFormValid)
+//           .opacity(isFormValid ? 1 : 0.7)
             
             Spacer()
         }
+        .padding(24)
     }
     
     @ViewBuilder
     func HeaderView() -> some View {
         VStack {
             Text(title)
-                .customFont(24)
+                .customFont(20)
                 .bold()
         }
         .hSpacement(.leading)
@@ -61,10 +62,11 @@ struct AddNewListView: View {
                 closeModal.toggle()
             } label: {
                 ZStack {
-                    Circle()
+                    Rectangle()
                         .tint(.button.opacity(0.1))
-                        .frame(width: 45, height: 45)
-                    Image(systemName: "xmark")
+                        .frame(width: 55, height: 35)
+                        .cornerRadius(8)
+                    Text("Ok")
                         .foregroundColor(.button)
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -80,6 +82,22 @@ struct AddNewListView: View {
             InputView(textInput: $itemName, label: "Nome do item", placeHolder: "Digite o nome do ítem")
             
             HStack(alignment:.top) {
+                VStack(alignment: .leading) {
+                    Text("Preço")
+                        .foregroundColor(Color(.darkGray))
+                        .fontWeight(.semibold)
+                        .customFont(13)
+                        .lineSpacing(20)
+                    
+                    TextField("test 1", value: $price, formatter: numberFormatted)
+                        .padding(.horizontal)
+                        .font(.system(size: 15))
+                        .frame(height: 56)
+                        .background(Color.backgroundInput)
+                        .cornerRadius(8)
+                        .keyboardType(.numberPad)
+                }
+                
                 CustomNumber("Quantidade", $quantity)
                 
                 VStack(alignment: .leading) {
@@ -99,24 +117,6 @@ struct AddNewListView: View {
                     .hSpacement(.leading)
                 }
             }
-            
-            VStack(alignment: .leading) {
-                Text("Preço")
-                    .foregroundColor(Color(.darkGray))
-                    .fontWeight(.semibold)
-                    .customFont(13)
-                    .lineSpacing(20)
-                
-                TextField("test 1", value: $price, formatter: numberFormatted)
-                    .padding(.horizontal)
-                    .font(.system(size: 15))
-                    .frame(height: 56)
-                    .background(Color.backgroundInput)
-                    .cornerRadius(8)
-                    .keyboardType(.numberPad)
-            }
-            
-            InputView(textInput: $description, label: "Descrição", placeHolder: "Faça sua descrição")
         }
     }
     
