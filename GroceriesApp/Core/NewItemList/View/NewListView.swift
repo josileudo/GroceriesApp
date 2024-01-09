@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct NewListView: View {
+    @Binding var showingSheet: Bool;
     @State private var listName: String = ""
     
     var body: some View {
@@ -25,9 +26,7 @@ struct NewListView: View {
             Spacer()
             
             NavigationLink {
-            // MARK: Add function for user login
-                Text("Items")
-                    .navigationBarBackButtonHidden()
+                GroceriesItemsListView()
             } label: {
                 Text("Criar nova lista")
                     .font(.subheadline)
@@ -39,13 +38,14 @@ struct NewListView: View {
             }
         }
         .hSpacement(.leading)
+        .padding(.vertical)
     }
 }
 
 struct NewListView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            NewListView()
+            NewListView(showingSheet: .constant(false))
         }
     }
 }

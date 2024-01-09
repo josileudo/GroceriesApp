@@ -31,22 +31,14 @@ struct ListView: View {
                     .refreshable {
                         print("Refresh groceries list screen")
                     }
-                    .toolbar{
-                        ToolbarItem(placement: .navigationBarTrailing) {
-                            
-                        }
-                    }
                 } header: {
                     HeaderView(size)
                 }
             }
-//            .sheet(isPresented: $showingBottomSheet) {
-//                NewListView()
-//                    .presentationDetents([.medium])
-//                    .padding(24)
-//            }
+            .padding(.horizontal)
         }
     }
+        
     
     // MARK: Header view
     @ViewBuilder
@@ -59,7 +51,7 @@ struct ListView: View {
         .hSpacement(.leading)
         .overlay(alignment: .trailing) {
             NavigationLink {
-                NewListView()
+                NewListView(showingSheet: $showingBottomSheet)
             } label: {
                 Image(systemName: "plus")
                     .font(.title3)
@@ -71,13 +63,6 @@ struct ListView: View {
             }
         }
         .padding(.bottom, 15)
-        .background(
-            Rectangle()
-                .fill(.ultraThinMaterial)
-                .padding(.horizontal, -15)
-                .padding(.top, -(safeArea.top + 15))
-        )
-        .padding(.horizontal)
     }
     
     // MARK: Filters
@@ -89,7 +74,6 @@ struct ListView: View {
             }
         }
         .pickerStyle(.segmented)
-        .padding(.horizontal)
     }
 }
 
