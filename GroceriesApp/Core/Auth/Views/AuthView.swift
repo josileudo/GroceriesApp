@@ -48,6 +48,7 @@ struct AuthView: View {
             // MARK: Button for user Login
             NavigationLink {
                 GroceriesTabBarView()
+                    .navigationBarBackButtonHidden()
             } label: {
                 Text("Entrar")
                     .font(.subheadline)

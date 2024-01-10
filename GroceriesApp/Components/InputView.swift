@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct InputView: View {
-    @Binding var textInput: String;
+    @Binding var textInput: String
     @State var isSecurityField: Bool = false
     @State var showPasswordIcon: Bool = false
     
     var label: String
     var placeHolder: String;
     
-    
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
             Text(label)
                 .foregroundColor(Color(.darkGray))
                 .fontWeight(.semibold)
-                .font(.footnote)
+                .customFont(13)
                 .lineSpacing(20)
             
             ZStack(alignment: .trailing) {
